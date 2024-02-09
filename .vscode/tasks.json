@@ -1,0 +1,29 @@
+{
+    "tasks": [
+        {
+            "type": "process",
+            "label": "C/C++: g++.exe 활성 파일 빌드",
+            "command": "C:/mingw64/bin/g++.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}\\build\\${fileBasenameNoExtension}.exe",
+                "-lws2_32"
+            ],
+            "options": {
+                "cwd": "C:/mingw64/bin"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "컴파일러: C:/mingw64/bin/g++.exe"
+        }
+    ],
+    "version": "2.0.0"
+}
